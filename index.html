@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Sismos</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <script type="module" src = "./index.js"></script>
+    <header id="principal">
+        <span id="title">Sismos en México</span>
+    </header>
+    <div class="container">
+            <label for="inf_date">Fecha Inicial</label>
+            <input name="inf_date" id="inf_date" type="date" min="1900-01-01" max="2021-12-31">
+            <label for="sup_date">Fecha Final</label>
+            <input name="sup_date" id="sup_date" type="date" min="1900-01-01" max="2021-12-31">
+            <label for="speed">Velocidad</label>
+            <input type="number" name="speed" id="speed" min="1" max="7" step="1" value="4">
+            <button type="button" id='animate'>Animar</button>
+            <button type="button" id='stop'>Detener</button> 
+    </div>
+    <h1 id='date'></h1>
+    <div class="result">
+        <div class='timeDIV'>
+            <svg class='timeSVG'></svg>
+        </div>
+        <div class='mapDIV'>
+            <svg class='mapSVG'></svg>
+        </div>
+    </div>
+    <footer id="foot">
+        Derechos Reservados &copy; 2021
+    </footer>
+</body>
+</html>
+
